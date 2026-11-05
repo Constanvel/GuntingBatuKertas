@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="title">🤖 ROCK PAPER SCISSORS <span>AI</span></h1>
+    <p class="subtitle">Teach Your Own AI & Play Against It!</p>
+
+    <div class="scoreboard">
+      <div class="score-box">
+        <h2>PLAYER</h2>
+        <p id="player-score">0</p>
+      </div>
+      <div class="vs">VS</div>
+      <div class="score-box">
+        <h2>AI</h2>
+        <p id="ai-score">0</p>
+      </div>
+    </div>
+
+    <div class="arena">
+      <div class="player-area">
+        <h3>Kamu ✊ ✋ ✌️</h3>
+        <div id="webcam-container"></div>
+        <p class="info-line">Prediksi: <span id="prediction">-</span></p>
+        <p class="info-line">Confidence: <span id="confidence">0%</span></p>
+      </div>
+
+      <div class="ai-area">
+        <h3>AI Choice 🤖</h3>
+        <div class="ai-emoji" id="ai-emoji">❓</div>
+      </div>
+    </div>
+
+    <div class="result-box">
+      <p id="result-text">Tekan START untuk mulai battle!</p>
+    </div>
+
+    <button id="start-btn">🚀 START GAME</button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
